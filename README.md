@@ -19,6 +19,22 @@ If you're here looking for HDO PRO itself, this repository will not help you.
 
 ---
 
+# 📦 Need an XAPK Installer?
+
+If you're looking for information about **XAPK installers**, take a look at the **HDO PRO XAPK Installer Guide** repository.
+
+There you'll find general information about:
+
+* Recommended XAPK installers
+* What XAPK files are
+* Installation best practices
+* Android package formats
+* Safety recommendations
+
+> **Please note:** The XAPK Installer Guide is also informational only. It does **not** contain HDO PRO downloads, APKs, XAPKs, source code, or installation packages.
+
+---
+
 # 📲 Installing Apps from Other Sources
 
 Installing an app from outside an official app store is commonly called **sideloading**.
@@ -98,6 +114,7 @@ This repository intentionally contains:
 
 * ❌ No HDO PRO downloads
 * ❌ No APK files
+* ❌ No XAPK files
 * ❌ No source code
 * ❌ No release builds
 * ❌ No installation packages
@@ -111,7 +128,7 @@ Nothing in this repository will provide access to HDO PRO.
 
 This wiki exists solely as a collection of general Android knowledge and security guidance.
 
-It should not be interpreted as a source for HDO PRO software, downloads, or community access.
+It should not be interpreted as a source for HDO PRO software, downloads, community access, or installation packages.
 
 ---
 
