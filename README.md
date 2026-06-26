@@ -80,13 +80,11 @@ If something doesn't feel right, don't install it.
 
 # 🛠️ RECOMMENDED TOOLS
 
-## HDO PRO Android System Toolkit
-**GitHub:** https://github.com/HDO-PRO/android-system-toolkit
+## [HDO PRO Android System Toolkit](https://github.com/HDO-PRO/android-system-toolkit)
 
 Community toolkit for Android device management and system utilities.
 
-## Android Toolkit
-**GitHub:** https://github.com/AnthonyGress/Android-Toolkit
+## [Android Toolkit](https://github.com/AnthonyGress/Android-Toolkit)
 
 A cross-platform desktop app for managing Android devices via ADB. Useful for:
 - **APK Installation:** Single APK install, batch install, quick install popular apps
@@ -95,23 +93,23 @@ A cross-platform desktop app for managing Android devices via ADB. Useful for:
 - **FireTV Tools:** Custom screensaver, debloat (remove Amazon bloatware)
 - **System Tools:** Device management, debugging
 
-**Download:** https://github.com/AnthonyGress/Android-Toolkit/releases/latest/download/Android-toolkit-setup.exe
+**Download:** [Android-toolkit-setup.exe](https://github.com/AnthonyGress/Android-Toolkit/releases/latest/download/Android-toolkit-setup.exe)
 
 ## Useful Utility Apps
-- **SmartTubeNext** - Ad-free YouTube for Android TV: https://github.com/yuliskov/SmartTubeNext
-- **Wolf Launcher** - Block Android TV ads: https://www.techdoctoruk.com/tutorials/block-android-tv-adverts-with-wolf-launcher/
-- **ReVanced** - Modded apps (YouTube, Reddit, Spotify): https://revanced.app/
-- **Activity Launcher** - Launch hidden system activities: https://www.f-droid.org/en/packages/de.szalkowski.activitylauncher/
+- **[SmartTubeNext](https://github.com/yuliskov/SmartTubeNext)** - Ad-free YouTube for Android TV
+- **[Wolf Launcher](https://www.techdoctoruk.com/tutorials/block-android-tv-adverts-with-wolf-launcher/)** - Block Android TV ads
+- **[ReVanced](https://revanced.app/)** - Modded apps (YouTube, Reddit, Spotify)
+- **[Activity Launcher](https://www.f-droid.org/en/packages/de.szalkowski.activitylauncher/)** - Launch hidden system activities
 
 ---
 
 # �� SCAN FILES BEFORE INSTALLING
 
 Before opening an APK, consider scanning with:
-- VirusTotal
-- Hybrid Analysis
-- MetaDefender Cloud
-- Google Play Protect
+- [VirusTotal](https://www.virustotal.com)
+- [Hybrid Analysis](https://www.hybrid-analysis.com)
+- [MetaDefender Cloud](https://metadefender.com)
+- [Google Play Protect](https://play.google.com/store)
 
 No scanner can guarantee a file is completely safe.
 
