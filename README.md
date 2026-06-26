@@ -39,18 +39,43 @@ This wiki provides general Android information. It is not a download center, sup
 5. **Install** and delete APK
 
 ### Safety Tips
-- Scan APKs with VirusTotal before installing
+- Scan APKs with [VirusTotal](https://www.virustotal.com) before installing
 - Only download from trusted sources
 - Disable Unknown Sources after installation
 - Keep device updated
-- Use Android Toolkit for safer ADB-based installations
+- Use [Android Toolkit](https://github.com/AnthonyGress/Android-Toolkit) for safer ADB-based installations
 - Backup important data before modifying system settings
 
 </details>
 
 ---
 
-# 📦 XAPK INSTALLER GUIDE
+# � ADB CONNECTION TROUBLESHOOTING
+
+<details>
+<summary>Common Issues</summary>
+
+### Can't connect via ADB
+- **Device not found:** Ensure ADB debugging is enabled
+- **Connection refused:** Check both devices are on same network
+- **Unauthorized:** Accept debugging prompt on device
+- **Firewall blocking:** Allow ADB through firewall
+- **Wrong IP:** Verify device IP address in settings
+
+### Fire TV Specific
+- Enable ADB Debugging: Settings > My Fire TV > Developer Options > ADB Debugging
+- Enable Apps from Unknown Sources: Settings > My Fire TV > Developer Options > Apps from Unknown Sources
+- Find IP: Settings > My Fire TV > About > Network
+
+### Android TV Specific
+- Enable USB Debugging: Settings > Device Preferences > About > Build Number (tap 7x) > Developer Options > USB Debugging
+- Enable Network Debugging: Developer Options > Network ADB Debugging
+
+</details>
+
+---
+
+# � XAPK INSTALLER GUIDE
 
 For information about XAPK installers, see the **HDO PRO XAPK Installer Guide** repository.
 
@@ -115,6 +140,60 @@ No scanner can guarantee a file is completely safe.
 
 ---
 
+# ❌ COMMON SIDELOADING ERRORS & FIXES
+
+<details>
+<summary>Error Solutions</summary>
+
+### Parse Error
+- **Cause:** APK incompatible with device architecture or corrupted download
+- **Fix:** Re-download APK, check device compatibility (arm64-v8a, armeabi-v7a)
+
+### Installation Failed
+- **Cause:** Insufficient storage, conflicting app, or signature mismatch
+- **Fix:** Clear storage, uninstall existing version, disable Play Protect temporarily
+
+### App Not Installed
+- **Cause:** Unknown sources disabled or package signature conflict
+- **Fix:** Enable unknown sources, uninstall existing app with same package name
+
+### Blocked by Play Protect
+- **Cause:** Google security flagging
+- **Fix:** Tap "Install anyway" or temporarily disable Play Protect
+
+### Certificate Mismatch
+- **Cause:** Installing modded app over original
+- **Fix:** Uninstall original app first, then install modded version
+
+### Download Failed
+- **Cause:** Network issues or server down
+- **Fix:** Check internet connection, try alternative download source
+
+</details>
+
+---
+
+# 🔍 APK VERIFICATION DETAILS
+
+**How to verify APK integrity:**
+- **Check file size:** Compare with expected size from source
+- **Verify hash:** Use SHA-256 checksum if provided
+- **Check signature:** Verify app signature matches original
+- **Package name:** Confirm package name is expected (e.g., com.example.app)
+- **Version info:** Verify version code and name
+
+**Using apksigner (advanced):**
+```bash
+apksigner verify --print-certs your-app.apk
+```
+
+**Using keytool (advanced):**
+```bash
+keytool -printcert -jarfile your-app.apk
+```
+
+---
+
 # 🌍 INTERNET & PRIVACY
 
 **When downloading:**
@@ -127,7 +206,53 @@ VPN and DNS are privacy tools, not malware protection.
 
 ---
 
-# 📦 BEFORE INSTALLING
+# � APP PERMISSIONS GUIDE
+
+**Permissions to watch out for:**
+- **Phone/SMS:** Unnecessary for streaming apps
+- **Contacts:** Not needed for media apps
+- **Location:** Only needed if app has local content
+- **Camera/Microphone:** Suspicious for streaming apps
+- **Read/Write Storage:** Normal for downloading content
+
+**Red flags:**
+- Requesting admin/root access
+- Requesting accessibility service
+- Requesting device admin privileges
+- Excessive permissions for app function
+
+**Best practices:**
+- Review permissions before installing
+- Deny unnecessary permissions if possible
+- Use apps with minimal permission requirements
+- Research app reputation if permissions seem excessive
+
+---
+
+# � STORAGE MANAGEMENT TIPS
+
+**Free up space before installing:**
+- Clear app cache: Settings > Apps > Select app > Storage > Clear Cache
+- Delete unused apps and games
+- Remove downloaded videos/files from Downloads
+- Move photos/videos to cloud storage or computer
+- Clear system cache (requires reboot or recovery mode)
+
+**For Fire TV / Android TV:**
+- Uninstall unused apps from Settings > Applications
+- Clear cache for streaming apps regularly
+- Use external storage if device supports it
+- Remove downloaded content from apps after watching
+
+**General tips:**
+- Keep at least 1GB free for app installations
+- Larger apps (games) may need 2-3GB free space
+- APK files can be deleted after installation
+- Some apps cache content that grows over time
+
+---
+
+# �📦 BEFORE INSTALLING
 
 Always verify:
 - ✅ File comes from trusted source
